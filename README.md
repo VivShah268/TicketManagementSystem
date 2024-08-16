@@ -1,6 +1,7 @@
 # TicketManagementSystem
 
 Create table scripts
+
 create table users (
     id SERIAL PRIMARY KEY,
     name text not null,
@@ -19,3 +20,13 @@ CREATE TABLE tickets (
     dueDate  text not null,
     createdBy  int references users(id)
 );
+
+
+# Script to run the project
+npm run dev
+
+# Things completed
+User creation
+DB Connection
+Authentication
+User Login
